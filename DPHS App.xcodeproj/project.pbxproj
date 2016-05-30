@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83153B511BE8229E00934C06 /* ZAActivityBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83153B4E1BE8229E00934C06 /* ZAActivityBar.bundle */; };
+		83153B541BE8231300934C06 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83153B531BE8231300934C06 /* SpriteKit.framework */; };
+		8347151F1CFD018400ABC65B /* RPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF834C18BC541B00A102DA /* RPViewController.m */; };
+		834715211CFD018400ABC65B /* NEOClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E4D5D1BDC4895004A2ADA /* NEOClassesTableViewController.m */; };
+		834715231CFD018400ABC65B /* NEOClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E4D6E1BDC659B004A2ADA /* NEOClassViewController.m */; };
+		834715251CFD018400ABC65B /* NEOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83153B4B1BE81E9500934C06 /* NEOLoginViewController.m */; };
+		834715271CFD018400ABC65B /* ClassTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E4D6B1BDC60A4004A2ADA /* ClassTableViewCell.m */; };
+		834715291CFD018400ABC65B /* AssignmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83153B421BE6F9F700934C06 /* AssignmentTableViewCell.m */; };
+		8347152B1CFD018400ABC65B /* StudentIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D329601BD605BB0019094C /* StudentIDViewController.m */; };
+		8347152D1CFD018400ABC65B /* AthleticsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D329651BD728CF0019094C /* AthleticsTable.m */; };
+		8347152F1CFD018400ABC65B /* AthleticsSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D3296C1BD729420019094C /* AthleticsSchedule.m */; };
+		834715311CFD018400ABC65B /* eventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D329691BD728E40019094C /* eventTableViewCell.m */; };
+		834715331CFD018400ABC65B /* CampusCommunicationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D3298B1BD742930019094C /* CampusCommunicationTableViewCell.m */; };
+		834715351CFD018400ABC65B /* CampusCommunicationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D3298E1BD7431F0019094C /* CampusCommunicationTableViewController.m */; };
+		834715371CFD018400ABC65B /* SeminarInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8372DF711BD8846F000B779A /* SeminarInfoTableViewController.m */; };
+		834715391CFD018400ABC65B /* SeminarWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8372DF741BD88487000B779A /* SeminarWebViewController.m */; };
+		8347153B1CFD018400ABC65B /* AeriesWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8372DF771BD88A5A000B779A /* AeriesWebViewController.m */; };
+		8347153D1CFD018400ABC65B /* NavianceWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8372DF7D1BD88B9E000B779A /* NavianceWebViewController.m */; };
+		8347153F1CFD018400ABC65B /* WebstoreWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8372DF801BD88C27000B779A /* WebstoreWebViewController.m */; };
+		834715411CFD018400ABC65B /* SupportWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8374AAED1BE9C74A00738F18 /* SupportWebViewController.m */; };
+		834715431CFD018400ABC65B /* RPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF834618BC541B00A102DA /* RPAppDelegate.m */; };
+		834715451CFD018400ABC65B /* MYIntroductionPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 832B76C91C16614500F20F33 /* MYIntroductionPanel.m */; };
+		834715471CFD018400ABC65B /* MYIntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 832B76CB1C16614500F20F33 /* MYIntroductionView.m */; };
+		834715491CFD018400ABC65B /* JJMaterialTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 830384641BFAE09F00F99129 /* JJMaterialTextfield.m */; };
+		834715531CFD018400ABC65B /* ZAActivityBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 83153B501BE8229E00934C06 /* ZAActivityBar.m */; };
+		834715551CFD018400ABC65B /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 830384601BFAE00600F99129 /* SKBounceAnimation.m */; };
+		834715571CFD018400ABC65B /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E4D721BDC66EF004A2ADA /* KAProgressLabel.m */; };
+		834715591CFD018400ABC65B /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E4D741BDC66EF004A2ADA /* TPPropertyAnimation.m */; };
+		8347155A1CFD069C00ABC65B /* RPSlidingMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 830384571BFADFA500F99129 /* RPSlidingMenuCell.m */; };
+		8347155B1CFD069C00ABC65B /* RPSlidingMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 830384591BFADFA500F99129 /* RPSlidingMenuLayout.m */; };
+		8347155C1CFD069C00ABC65B /* RPSlidingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8303845B1BFADFA500F99129 /* RPSlidingMenuViewController.m */; };
+		8347155D1CFD072400ABC65B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF834218BC541B00A102DA /* main.m */; };
+		8374AAEA1BE9C3E100738F18 /* fre3of9x.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8374AAE91BE9C36B00738F18 /* fre3of9x.ttf */; };
+		83AA16CE1CC70A5E00E9EF5F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AA16CD1CC70A5E00E9EF5F /* Launch Screen.storyboard */; };
+		83C2E33F1C0FF71D008FF3ED /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D329721BD729DE0019094C /* Bolts.framework */; };
+		83C2E3401C0FF71D008FF3ED /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D329731BD729DE0019094C /* Parse.framework */; };
+		83C2E3411C0FF71D008FF3ED /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D329881BD733540019094C /* ParseUI.framework */; };
+		83D3297F1BD72A1E0019094C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D329761BD72A1E0019094C /* AudioToolbox.framework */; };
+		83D329801BD72A1E0019094C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D329771BD72A1E0019094C /* CFNetwork.framework */; };
+		83D329811BD72A1E0019094C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D329781BD72A1E0019094C /* CoreLocation.framework */; };
+		83D329821BD72A1E0019094C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D329791BD72A1E0019094C /* libsqlite3.tbd */; };
+		83D329831BD72A1E0019094C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D3297A1BD72A1E0019094C /* libz.tbd */; };
+		83D329841BD72A1E0019094C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D3297B1BD72A1E0019094C /* QuartzCore.framework */; };
+		83D329851BD72A1E0019094C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D3297C1BD72A1E0019094C /* Security.framework */; };
+		83D329861BD72A1E0019094C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D3297D1BD72A1E0019094C /* StoreKit.framework */; };
+		83D329871BD72A1E0019094C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D3297E1BD72A1E0019094C /* SystemConfiguration.framework */; };
+		DABF833718BC541B00A102DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF833618BC541B00A102DA /* Foundation.framework */; };
+		DABF833918BC541B00A102DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF833818BC541B00A102DA /* CoreGraphics.framework */; };
+		DABF833B18BC541B00A102DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABF833A18BC541B00A102DA /* UIKit.framework */; };
+		DABF834A18BC541B00A102DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABF834818BC541B00A102DA /* Main.storyboard */; };
+		DABF834F18BC541B00A102DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABF834E18BC541B00A102DA /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		830384551BFADFA500F99129 /* RPSlidingMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPSlidingMenu.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/RPSlidingMenu/RPSlidingMenu.h"; sourceTree = "<absolute>"; };
+		830384561BFADFA500F99129 /* RPSlidingMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPSlidingMenuCell.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/RPSlidingMenu/RPSlidingMenuCell.h"; sourceTree = "<absolute>"; };
+		830384571BFADFA500F99129 /* RPSlidingMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPSlidingMenuCell.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/RPSlidingMenu/RPSlidingMenuCell.m"; sourceTree = "<absolute>"; };
+		830384581BFADFA500F99129 /* RPSlidingMenuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPSlidingMenuLayout.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/RPSlidingMenu/RPSlidingMenuLayout.h"; sourceTree = "<absolute>"; };
+		830384591BFADFA500F99129 /* RPSlidingMenuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPSlidingMenuLayout.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/RPSlidingMenu/RPSlidingMenuLayout.m"; sourceTree = "<absolute>"; };
+		8303845A1BFADFA500F99129 /* RPSlidingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RPSlidingMenuViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/RPSlidingMenu/RPSlidingMenuViewController.h"; sourceTree = "<absolute>"; };
+		8303845B1BFADFA500F99129 /* RPSlidingMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RPSlidingMenuViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/RPSlidingMenu/RPSlidingMenuViewController.m"; sourceTree = "<absolute>"; };
+		8303845F1BFAE00600F99129 /* SKBounceAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKBounceAnimation.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/ZAActivityBar/SKBounceAnimation.h"; sourceTree = "<absolute>"; };
+		830384601BFAE00600F99129 /* SKBounceAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKBounceAnimation.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/ZAActivityBar/SKBounceAnimation.m"; sourceTree = "<absolute>"; };
+		830384631BFAE09F00F99129 /* JJMaterialTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJMaterialTextfield.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/JJMaterialTextField/JJMaterialTextfield.h"; sourceTree = "<absolute>"; };
+		830384641BFAE09F00F99129 /* JJMaterialTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JJMaterialTextfield.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/JJMaterialTextField/JJMaterialTextfield.m"; sourceTree = "<absolute>"; };
+		83153B411BE6F9F700934C06 /* AssignmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssignmentTableViewCell.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/AssignmentTableViewCell.h"; sourceTree = "<absolute>"; };
+		83153B421BE6F9F700934C06 /* AssignmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AssignmentTableViewCell.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/AssignmentTableViewCell.m"; sourceTree = "<absolute>"; };
+		83153B4A1BE81E9500934C06 /* NEOLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NEOLoginViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/NEOLoginViewController.h"; sourceTree = "<absolute>"; };
+		83153B4B1BE81E9500934C06 /* NEOLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NEOLoginViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/NEOLoginViewController.m"; sourceTree = "<absolute>"; };
+		83153B4E1BE8229E00934C06 /* ZAActivityBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ZAActivityBar.bundle; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/ZAActivityBar/ZAActivityBar.bundle"; sourceTree = "<absolute>"; };
+		83153B4F1BE8229E00934C06 /* ZAActivityBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZAActivityBar.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/ZAActivityBar/ZAActivityBar.h"; sourceTree = "<absolute>"; };
+		83153B501BE8229E00934C06 /* ZAActivityBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZAActivityBar.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/ZAActivityBar/ZAActivityBar.m"; sourceTree = "<absolute>"; };
+		83153B531BE8231300934C06 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		832B76C81C16614500F20F33 /* MYIntroductionPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYIntroductionPanel.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/MYIntroductionPanel.h"; sourceTree = "<absolute>"; };
+		832B76C91C16614500F20F33 /* MYIntroductionPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYIntroductionPanel.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/MYIntroductionPanel.m"; sourceTree = "<absolute>"; };
+		832B76CA1C16614500F20F33 /* MYIntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYIntroductionView.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/MYIntroductionView.h"; sourceTree = "<absolute>"; };
+		832B76CB1C16614500F20F33 /* MYIntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYIntroductionView.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/MYIntroductionView.m"; sourceTree = "<absolute>"; };
+		832E4D5B1BDC487F004A2ADA /* StudentIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentIDViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/StudentIDViewController.h"; sourceTree = "<absolute>"; };
+		832E4D5C1BDC4895004A2ADA /* NEOClassesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NEOClassesTableViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/NEOClassesTableViewController.h"; sourceTree = "<absolute>"; };
+		832E4D5D1BDC4895004A2ADA /* NEOClassesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NEOClassesTableViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/NEOClassesTableViewController.m"; sourceTree = "<absolute>"; };
+		832E4D6A1BDC60A4004A2ADA /* ClassTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassTableViewCell.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/ClassTableViewCell.h"; sourceTree = "<absolute>"; };
+		832E4D6B1BDC60A4004A2ADA /* ClassTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassTableViewCell.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/ClassTableViewCell.m"; sourceTree = "<absolute>"; };
+		832E4D6D1BDC659B004A2ADA /* NEOClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NEOClassViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/NEOClassViewController.h"; sourceTree = "<absolute>"; };
+		832E4D6E1BDC659B004A2ADA /* NEOClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NEOClassViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/NEOClassViewController.m"; sourceTree = "<absolute>"; };
+		832E4D711BDC66EF004A2ADA /* KAProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KAProgressLabel.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/KAProgressLabel/KAProgressLabel.h"; sourceTree = "<absolute>"; };
+		832E4D721BDC66EF004A2ADA /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KAProgressLabel.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/KAProgressLabel/KAProgressLabel.m"; sourceTree = "<absolute>"; };
+		832E4D731BDC66EF004A2ADA /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPropertyAnimation.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/KAProgressLabel/TPPropertyAnimation.h"; sourceTree = "<absolute>"; };
+		832E4D741BDC66EF004A2ADA /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPropertyAnimation.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/Frameworks/KAProgressLabel/TPPropertyAnimation.m"; sourceTree = "<absolute>"; };
+		8372DF701BD8846F000B779A /* SeminarInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeminarInfoTableViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/SeminarInfoTableViewController.h"; sourceTree = "<absolute>"; };
+		8372DF711BD8846F000B779A /* SeminarInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeminarInfoTableViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/SeminarInfoTableViewController.m"; sourceTree = "<absolute>"; };
+		8372DF731BD88487000B779A /* SeminarWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeminarWebViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/SeminarWebViewController.h"; sourceTree = "<absolute>"; };
+		8372DF741BD88487000B779A /* SeminarWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeminarWebViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/SeminarWebViewController.m"; sourceTree = "<absolute>"; };
+		8372DF761BD88A5A000B779A /* AeriesWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AeriesWebViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/AeriesWebViewController.h"; sourceTree = "<absolute>"; };
+		8372DF771BD88A5A000B779A /* AeriesWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AeriesWebViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/AeriesWebViewController.m"; sourceTree = "<absolute>"; };
+		8372DF7C1BD88B9E000B779A /* NavianceWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavianceWebViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/NavianceWebViewController.h"; sourceTree = "<absolute>"; };
+		8372DF7D1BD88B9E000B779A /* NavianceWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavianceWebViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/NavianceWebViewController.m"; sourceTree = "<absolute>"; };
+		8372DF7F1BD88C27000B779A /* WebstoreWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebstoreWebViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/WebstoreWebViewController.h"; sourceTree = "<absolute>"; };
+		8372DF801BD88C27000B779A /* WebstoreWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebstoreWebViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/WebstoreWebViewController.m"; sourceTree = "<absolute>"; };
+		8374AAE91BE9C36B00738F18 /* fre3of9x.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = fre3of9x.ttf; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/fre3of9x.ttf"; sourceTree = "<absolute>"; };
+		8374AAEC1BE9C74A00738F18 /* SupportWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SupportWebViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/SupportWebViewController.h"; sourceTree = "<absolute>"; };
+		8374AAED1BE9C74A00738F18 /* SupportWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SupportWebViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/SupportWebViewController.m"; sourceTree = "<absolute>"; };
+		83AA16CD1CC70A5E00E9EF5F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/Launch Screen.storyboard"; sourceTree = "<absolute>"; };
+		83D329601BD605BB0019094C /* StudentIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentIDViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/StudentIDViewController.m"; sourceTree = "<absolute>"; };
+		83D329651BD728CF0019094C /* AthleticsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AthleticsTable.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/AthleticsTable.m"; sourceTree = "<absolute>"; };
+		83D329671BD728D30019094C /* AthleticsTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AthleticsTable.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/AthleticsTable.h"; sourceTree = "<absolute>"; };
+		83D329681BD728E40019094C /* eventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eventTableViewCell.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/eventTableViewCell.h"; sourceTree = "<absolute>"; };
+		83D329691BD728E40019094C /* eventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = eventTableViewCell.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/eventTableViewCell.m"; sourceTree = "<absolute>"; };
+		83D3296B1BD7293D0019094C /* AthleticsSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AthleticsSchedule.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/AthleticsSchedule.h"; sourceTree = "<absolute>"; };
+		83D3296C1BD729420019094C /* AthleticsSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AthleticsSchedule.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/AthleticsSchedule.m"; sourceTree = "<absolute>"; };
+		83D329721BD729DE0019094C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		83D329731BD729DE0019094C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		83D329761BD72A1E0019094C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		83D329771BD72A1E0019094C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		83D329781BD72A1E0019094C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		83D329791BD72A1E0019094C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		83D3297A1BD72A1E0019094C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		83D3297B1BD72A1E0019094C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		83D3297C1BD72A1E0019094C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		83D3297D1BD72A1E0019094C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		83D3297E1BD72A1E0019094C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		83D329881BD733540019094C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		83D3298A1BD742930019094C /* CampusCommunicationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CampusCommunicationTableViewCell.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/CampusCommunicationTableViewCell.h"; sourceTree = "<absolute>"; };
+		83D3298B1BD742930019094C /* CampusCommunicationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampusCommunicationTableViewCell.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/CampusCommunicationTableViewCell.m"; sourceTree = "<absolute>"; };
+		83D3298D1BD7431F0019094C /* CampusCommunicationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CampusCommunicationTableViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/CampusCommunicationTableViewController.h"; sourceTree = "<absolute>"; };
+		83D3298E1BD7431F0019094C /* CampusCommunicationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampusCommunicationTableViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/CampusCommunicationTableViewController.m"; sourceTree = "<absolute>"; };
+		DABF833318BC541B00A102DA /* DPHS App.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "DPHS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABF833618BC541B00A102DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DABF833818BC541B00A102DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DABF833A18BC541B00A102DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DABF833E18BC541B00A102DA /* DPHS App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DPHS App-Info.plist"; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/DPHS App-Info.plist"; sourceTree = "<absolute>"; };
+		DABF834218BC541B00A102DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/main.m"; sourceTree = "<absolute>"; };
+		DABF834418BC541B00A102DA /* DPHS App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DPHS App-Prefix.pch"; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/DPHS App-Prefix.pch"; sourceTree = "<absolute>"; };
+		DABF834518BC541B00A102DA /* RPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RPAppDelegate.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/RPAppDelegate.h"; sourceTree = "<absolute>"; };
+		DABF834618BC541B00A102DA /* RPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RPAppDelegate.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/RPAppDelegate.m"; sourceTree = "<absolute>"; };
+		DABF834918BC541B00A102DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DABF834B18BC541B00A102DA /* RPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RPViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/RPViewController.h"; sourceTree = "<absolute>"; };
+		DABF834C18BC541B00A102DA /* RPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RPViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/RPViewController.m"; sourceTree = "<absolute>"; };
+		DABF834E18BC541B00A102DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/Images.xcassets"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DABF833018BC541B00A102DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C2E33F1C0FF71D008FF3ED /* Bolts.framework in Frameworks */,
+				83C2E3401C0FF71D008FF3ED /* Parse.framework in Frameworks */,
+				83C2E3411C0FF71D008FF3ED /* ParseUI.framework in Frameworks */,
+				83153B541BE8231300934C06 /* SpriteKit.framework in Frameworks */,
+				83D3297F1BD72A1E0019094C /* AudioToolbox.framework in Frameworks */,
+				83D329801BD72A1E0019094C /* CFNetwork.framework in Frameworks */,
+				83D329811BD72A1E0019094C /* CoreLocation.framework in Frameworks */,
+				83D329821BD72A1E0019094C /* libsqlite3.tbd in Frameworks */,
+				83D329831BD72A1E0019094C /* libz.tbd in Frameworks */,
+				83D329841BD72A1E0019094C /* QuartzCore.framework in Frameworks */,
+				83D329851BD72A1E0019094C /* Security.framework in Frameworks */,
+				83D329861BD72A1E0019094C /* StoreKit.framework in Frameworks */,
+				83D329871BD72A1E0019094C /* SystemConfiguration.framework in Frameworks */,
+				DABF833918BC541B00A102DA /* CoreGraphics.framework in Frameworks */,
+				DABF833B18BC541B00A102DA /* UIKit.framework in Frameworks */,
+				DABF833718BC541B00A102DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		830384541BFADFA500F99129 /* RPSlidingMenu */ = {
+			isa = PBXGroup;
+			children = (
+				830384551BFADFA500F99129 /* RPSlidingMenu.h */,
+				830384561BFADFA500F99129 /* RPSlidingMenuCell.h */,
+				830384571BFADFA500F99129 /* RPSlidingMenuCell.m */,
+				830384581BFADFA500F99129 /* RPSlidingMenuLayout.h */,
+				830384591BFADFA500F99129 /* RPSlidingMenuLayout.m */,
+				8303845A1BFADFA500F99129 /* RPSlidingMenuViewController.h */,
+				8303845B1BFADFA500F99129 /* RPSlidingMenuViewController.m */,
+			);
+			path = RPSlidingMenu;
+			sourceTree = "<group>";
+		};
+		830384621BFAE09F00F99129 /* JJMaterialTextField */ = {
+			isa = PBXGroup;
+			children = (
+				830384631BFAE09F00F99129 /* JJMaterialTextfield.h */,
+				830384641BFAE09F00F99129 /* JJMaterialTextfield.m */,
+			);
+			name = JJMaterialTextField;
+			path = ZAActivityBar/JJMaterialTextField;
+			sourceTree = "<group>";
+		};
+		83153B4D1BE8229E00934C06 /* ZAActivityBar */ = {
+			isa = PBXGroup;
+			children = (
+				83153B4E1BE8229E00934C06 /* ZAActivityBar.bundle */,
+				83153B4F1BE8229E00934C06 /* ZAActivityBar.h */,
+				83153B501BE8229E00934C06 /* ZAActivityBar.m */,
+				8303845F1BFAE00600F99129 /* SKBounceAnimation.h */,
+				830384601BFAE00600F99129 /* SKBounceAnimation.m */,
+			);
+			path = ZAActivityBar;
+			sourceTree = "<group>";
+		};
+		832B76C71C16613200F20F33 /* MYTutorialView */ = {
+			isa = PBXGroup;
+			children = (
+				832B76C81C16614500F20F33 /* MYIntroductionPanel.h */,
+				832B76C91C16614500F20F33 /* MYIntroductionPanel.m */,
+				832B76CA1C16614500F20F33 /* MYIntroductionView.h */,
+				832B76CB1C16614500F20F33 /* MYIntroductionView.m */,
+			);
+			name = MYTutorialView;
+			path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp";
+			sourceTree = "<absolute>";
+		};
+		832E4D5F1BDC48A8004A2ADA /* NEO Page */ = {
+			isa = PBXGroup;
+			children = (
+				832E4D5C1BDC4895004A2ADA /* NEOClassesTableViewController.h */,
+				832E4D5D1BDC4895004A2ADA /* NEOClassesTableViewController.m */,
+				832E4D6D1BDC659B004A2ADA /* NEOClassViewController.h */,
+				832E4D6E1BDC659B004A2ADA /* NEOClassViewController.m */,
+				83153B4A1BE81E9500934C06 /* NEOLoginViewController.h */,
+				83153B4B1BE81E9500934C06 /* NEOLoginViewController.m */,
+				832E4D6A1BDC60A4004A2ADA /* ClassTableViewCell.h */,
+				832E4D6B1BDC60A4004A2ADA /* ClassTableViewCell.m */,
+				83153B411BE6F9F700934C06 /* AssignmentTableViewCell.h */,
+				83153B421BE6F9F700934C06 /* AssignmentTableViewCell.m */,
+			);
+			name = "NEO Page";
+			sourceTree = "<group>";
+		};
+		832E4D601BDC48B0004A2ADA /* StudentIDPage */ = {
+			isa = PBXGroup;
+			children = (
+				832E4D5B1BDC487F004A2ADA /* StudentIDViewController.h */,
+				83D329601BD605BB0019094C /* StudentIDViewController.m */,
+			);
+			name = StudentIDPage;
+			sourceTree = "<group>";
+		};
+		832E4D621BDC48CD004A2ADA /* Athletics Page */ = {
+			isa = PBXGroup;
+			children = (
+				83D329671BD728D30019094C /* AthleticsTable.h */,
+				83D329651BD728CF0019094C /* AthleticsTable.m */,
+				83D3296B1BD7293D0019094C /* AthleticsSchedule.h */,
+				83D3296C1BD729420019094C /* AthleticsSchedule.m */,
+				83D329681BD728E40019094C /* eventTableViewCell.h */,
+				83D329691BD728E40019094C /* eventTableViewCell.m */,
+			);
+			name = "Athletics Page";
+			sourceTree = "<group>";
+		};
+		832E4D631BDC48D8004A2ADA /* Campus Communication Page */ = {
+			isa = PBXGroup;
+			children = (
+				83D3298A1BD742930019094C /* CampusCommunicationTableViewCell.h */,
+				83D3298B1BD742930019094C /* CampusCommunicationTableViewCell.m */,
+				83D3298D1BD7431F0019094C /* CampusCommunicationTableViewController.h */,
+				83D3298E1BD7431F0019094C /* CampusCommunicationTableViewController.m */,
+			);
+			name = "Campus Communication Page";
+			sourceTree = "<group>";
+		};
+		832E4D641BDC59C9004A2ADA /* Seminar Page */ = {
+			isa = PBXGroup;
+			children = (
+				8372DF701BD8846F000B779A /* SeminarInfoTableViewController.h */,
+				8372DF711BD8846F000B779A /* SeminarInfoTableViewController.m */,
+				8372DF731BD88487000B779A /* SeminarWebViewController.h */,
+				8372DF741BD88487000B779A /* SeminarWebViewController.m */,
+			);
+			name = "Seminar Page";
+			sourceTree = "<group>";
+		};
+		832E4D661BDC59DA004A2ADA /* Aeries Page */ = {
+			isa = PBXGroup;
+			children = (
+				8372DF761BD88A5A000B779A /* AeriesWebViewController.h */,
+				8372DF771BD88A5A000B779A /* AeriesWebViewController.m */,
+			);
+			name = "Aeries Page";
+			sourceTree = "<group>";
+		};
+		832E4D681BDC59EA004A2ADA /* Naviance Page */ = {
+			isa = PBXGroup;
+			children = (
+				8372DF7C1BD88B9E000B779A /* NavianceWebViewController.h */,
+				8372DF7D1BD88B9E000B779A /* NavianceWebViewController.m */,
+			);
+			name = "Naviance Page";
+			sourceTree = "<group>";
+		};
+		832E4D691BDC59F0004A2ADA /* Webstore Page */ = {
+			isa = PBXGroup;
+			children = (
+				8372DF7F1BD88C27000B779A /* WebstoreWebViewController.h */,
+				8372DF801BD88C27000B779A /* WebstoreWebViewController.m */,
+			);
+			name = "Webstore Page";
+			sourceTree = "<group>";
+		};
+		832E4D701BDC66EF004A2ADA /* KAProgressLabel */ = {
+			isa = PBXGroup;
+			children = (
+				832E4D711BDC66EF004A2ADA /* KAProgressLabel.h */,
+				832E4D721BDC66EF004A2ADA /* KAProgressLabel.m */,
+				832E4D731BDC66EF004A2ADA /* TPPropertyAnimation.h */,
+				832E4D741BDC66EF004A2ADA /* TPPropertyAnimation.m */,
+			);
+			path = KAProgressLabel;
+			sourceTree = "<group>";
+		};
+		8374AAF01BE9C78600738F18 /* Support Page */ = {
+			isa = PBXGroup;
+			children = (
+				8374AAEC1BE9C74A00738F18 /* SupportWebViewController.h */,
+				8374AAED1BE9C74A00738F18 /* SupportWebViewController.m */,
+			);
+			name = "Support Page";
+			sourceTree = "<group>";
+		};
+		DABF832A18BC541B00A102DA = {
+			isa = PBXGroup;
+			children = (
+				DABF833C18BC541B00A102DA /* DPHSApp */,
+				DABF833518BC541B00A102DA /* Frameworks */,
+				DABF833418BC541B00A102DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DABF833418BC541B00A102DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DABF833318BC541B00A102DA /* DPHS App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DABF833518BC541B00A102DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				832B76C71C16613200F20F33 /* MYTutorialView */,
+				830384621BFAE09F00F99129 /* JJMaterialTextField */,
+				830384541BFADFA500F99129 /* RPSlidingMenu */,
+				83153B4D1BE8229E00934C06 /* ZAActivityBar */,
+				832E4D701BDC66EF004A2ADA /* KAProgressLabel */,
+				83153B531BE8231300934C06 /* SpriteKit.framework */,
+				83D329761BD72A1E0019094C /* AudioToolbox.framework */,
+				83D329771BD72A1E0019094C /* CFNetwork.framework */,
+				83D329781BD72A1E0019094C /* CoreLocation.framework */,
+				83D329791BD72A1E0019094C /* libsqlite3.tbd */,
+				83D3297A1BD72A1E0019094C /* libz.tbd */,
+				83D329881BD733540019094C /* ParseUI.framework */,
+				83D3297B1BD72A1E0019094C /* QuartzCore.framework */,
+				83D3297C1BD72A1E0019094C /* Security.framework */,
+				83D3297D1BD72A1E0019094C /* StoreKit.framework */,
+				83D3297E1BD72A1E0019094C /* SystemConfiguration.framework */,
+				83D329721BD729DE0019094C /* Bolts.framework */,
+				83D329731BD729DE0019094C /* Parse.framework */,
+				DABF833618BC541B00A102DA /* Foundation.framework */,
+				DABF833818BC541B00A102DA /* CoreGraphics.framework */,
+				DABF833A18BC541B00A102DA /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DABF833C18BC541B00A102DA /* DPHSApp */ = {
+			isa = PBXGroup;
+			children = (
+				DABF834818BC541B00A102DA /* Main.storyboard */,
+				DABF834B18BC541B00A102DA /* RPViewController.h */,
+				DABF834C18BC541B00A102DA /* RPViewController.m */,
+				832E4D5F1BDC48A8004A2ADA /* NEO Page */,
+				832E4D601BDC48B0004A2ADA /* StudentIDPage */,
+				832E4D621BDC48CD004A2ADA /* Athletics Page */,
+				832E4D631BDC48D8004A2ADA /* Campus Communication Page */,
+				832E4D641BDC59C9004A2ADA /* Seminar Page */,
+				832E4D661BDC59DA004A2ADA /* Aeries Page */,
+				832E4D681BDC59EA004A2ADA /* Naviance Page */,
+				832E4D691BDC59F0004A2ADA /* Webstore Page */,
+				8374AAF01BE9C78600738F18 /* Support Page */,
+				DABF833D18BC541B00A102DA /* Supporting Files */,
+			);
+			name = DPHSApp;
+			path = RPSlidingMenuDemo;
+			sourceTree = "<group>";
+		};
+		DABF833D18BC541B00A102DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83AA16CD1CC70A5E00E9EF5F /* Launch Screen.storyboard */,
+				8374AAE91BE9C36B00738F18 /* fre3of9x.ttf */,
+				DABF834E18BC541B00A102DA /* Images.xcassets */,
+				DABF834518BC541B00A102DA /* RPAppDelegate.h */,
+				DABF834618BC541B00A102DA /* RPAppDelegate.m */,
+				DABF833E18BC541B00A102DA /* DPHS App-Info.plist */,
+				DABF834218BC541B00A102DA /* main.m */,
+				DABF834418BC541B00A102DA /* DPHS App-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DABF833218BC541B00A102DA /* DPHS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABF836518BC541B00A102DA /* Build configuration list for PBXNativeTarget "DPHS App" */;
+			buildPhases = (
+				DABF832F18BC541B00A102DA /* Sources */,
+				DABF833018BC541B00A102DA /* Frameworks */,
+				DABF833118BC541B00A102DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DPHS App";
+			productName = RPSlidingMenuDemo;
+			productReference = DABF833318BC541B00A102DA /* DPHS App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DABF832B18BC541B00A102DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RP;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Will Oakley";
+				TargetAttributes = {
+					DABF833218BC541B00A102DA = {
+						DevelopmentTeam = 7E67TG786L;
+					};
+				};
+			};
+			buildConfigurationList = DABF832E18BC541B00A102DA /* Build configuration list for PBXProject "DPHS App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DABF832A18BC541B00A102DA;
+			productRefGroup = DABF833418BC541B00A102DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DABF833218BC541B00A102DA /* DPHS App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DABF833118BC541B00A102DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83AA16CE1CC70A5E00E9EF5F /* Launch Screen.storyboard in Resources */,
+				83153B511BE8229E00934C06 /* ZAActivityBar.bundle in Resources */,
+				DABF834F18BC541B00A102DA /* Images.xcassets in Resources */,
+				DABF834A18BC541B00A102DA /* Main.storyboard in Resources */,
+				8374AAEA1BE9C3E100738F18 /* fre3of9x.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DABF832F18BC541B00A102DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8347155D1CFD072400ABC65B /* main.m in Sources */,
+				8347155A1CFD069C00ABC65B /* RPSlidingMenuCell.m in Sources */,
+				8347155B1CFD069C00ABC65B /* RPSlidingMenuLayout.m in Sources */,
+				8347155C1CFD069C00ABC65B /* RPSlidingMenuViewController.m in Sources */,
+				8347151F1CFD018400ABC65B /* RPViewController.m in Sources */,
+				834715211CFD018400ABC65B /* NEOClassesTableViewController.m in Sources */,
+				834715231CFD018400ABC65B /* NEOClassViewController.m in Sources */,
+				834715251CFD018400ABC65B /* NEOLoginViewController.m in Sources */,
+				834715271CFD018400ABC65B /* ClassTableViewCell.m in Sources */,
+				834715291CFD018400ABC65B /* AssignmentTableViewCell.m in Sources */,
+				8347152B1CFD018400ABC65B /* StudentIDViewController.m in Sources */,
+				8347152D1CFD018400ABC65B /* AthleticsTable.m in Sources */,
+				8347152F1CFD018400ABC65B /* AthleticsSchedule.m in Sources */,
+				834715311CFD018400ABC65B /* eventTableViewCell.m in Sources */,
+				834715331CFD018400ABC65B /* CampusCommunicationTableViewCell.m in Sources */,
+				834715351CFD018400ABC65B /* CampusCommunicationTableViewController.m in Sources */,
+				834715371CFD018400ABC65B /* SeminarInfoTableViewController.m in Sources */,
+				834715391CFD018400ABC65B /* SeminarWebViewController.m in Sources */,
+				8347153B1CFD018400ABC65B /* AeriesWebViewController.m in Sources */,
+				8347153D1CFD018400ABC65B /* NavianceWebViewController.m in Sources */,
+				8347153F1CFD018400ABC65B /* WebstoreWebViewController.m in Sources */,
+				834715411CFD018400ABC65B /* SupportWebViewController.m in Sources */,
+				834715431CFD018400ABC65B /* RPAppDelegate.m in Sources */,
+				834715451CFD018400ABC65B /* MYIntroductionPanel.m in Sources */,
+				834715471CFD018400ABC65B /* MYIntroductionView.m in Sources */,
+				834715491CFD018400ABC65B /* JJMaterialTextfield.m in Sources */,
+				834715531CFD018400ABC65B /* ZAActivityBar.m in Sources */,
+				834715551CFD018400ABC65B /* SKBounceAnimation.m in Sources */,
+				834715571CFD018400ABC65B /* KAProgressLabel.m in Sources */,
+				834715591CFD018400ABC65B /* TPPropertyAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DABF834818BC541B00A102DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DABF834918BC541B00A102DA /* Base */,
+			);
+			name = Main.storyboard;
+			path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp";
+			sourceTree = "<absolute>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DABF836318BC541B00A102DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		DABF836418BC541B00A102DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		DABF836618BC541B00A102DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DPHSApp/DPHS App-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DPHSApp/DPHS App-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Will-Oakley.DPHS-App";
+				PRODUCT_NAME = "DPHS App";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7s arm64 armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DABF836718BC541B00A102DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DPHSApp/DPHS App-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DPHSApp/DPHS App-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "Will-Oakley.DPHS-App";
+				PRODUCT_NAME = "DPHS App";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7s arm64 armv7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DABF832E18BC541B00A102DA /* Build configuration list for PBXProject "DPHS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABF836318BC541B00A102DA /* Debug */,
+				DABF836418BC541B00A102DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABF836518BC541B00A102DA /* Build configuration list for PBXNativeTarget "DPHS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABF836618BC541B00A102DA /* Debug */,
+				DABF836718BC541B00A102DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DABF832B18BC541B00A102DA /* Project object */;
+}
