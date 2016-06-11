@@ -99,17 +99,24 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    dataArray = [NSJSONSerialization JSONObjectWithData:NEOAPIData options:NSJSONReadingMutableLeaves error:nil];
-    NSLog(@"%@", dataArray);
-    [[NSUserDefaults standardUserDefaults] setObject:[[dataArray objectAtIndex:0]objectForKey:@"student_id"] forKey:@"StudentIDNumber"];
-    NSString *name = [NSString stringWithFormat:@"%@ %@",[[dataArray objectAtIndex:0]objectForKey:@"first_name"], [[dataArray objectAtIndex:0]objectForKey:@"last_name"]];
-    [[NSUserDefaults standardUserDefaults] setObject:name forKey:@"StudentName"];
-    [[NSUserDefaults standardUserDefaults] setObject:[[dataArray objectAtIndex:0]objectForKey:@"year_of_graduation"] forKey:@"StudentGrade"];
-    NSURL *url = [NSURL URLWithString:[[dataArray objectAtIndex:0]objectForKey:@"picture"]];
-    NSLog(@"Picture URL: %@", url);
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"userImageData"];
-    [self checkForIDData];
+    @try{
+        dataArray = [NSJSONSerialization JSONObjectWithData:NEOAPIData options:NSJSONReadingMutableLeaves error:nil];
+        NSLog(@"%@", dataArray);
+        [[NSUserDefaults standardUserDefaults] setObject:[[dataArray objectAtIndex:0]objectForKey:@"student_id"] forKey:@"StudentIDNumber"];
+        NSString *name = [NSString stringWithFormat:@"%@ %@",[[dataArray objectAtIndex:0]objectForKey:@"first_name"], [[dataArray objectAtIndex:0]objectForKey:@"last_name"]];
+        [[NSUserDefaults standardUserDefaults] setObject:name forKey:@"StudentName"];
+        [[NSUserDefaults standardUserDefaults] setObject:[[dataArray objectAtIndex:0]objectForKey:@"year_of_graduation"] forKey:@"StudentGrade"];
+        NSURL *url = [NSURL URLWithString:[[dataArray objectAtIndex:0]objectForKey:@"picture"]];
+        NSLog(@"Picture URL: %@", url);
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"userImageData"];
+        [self checkForIDData];
+    }
+    @catch(NSException *exception){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Looks like there was an error loading your student ID. Please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        [self performSegueWithIdentifier:@"homeFromID" sender:self];
+    }
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {

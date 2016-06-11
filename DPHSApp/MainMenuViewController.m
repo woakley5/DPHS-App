@@ -1,36 +1,31 @@
 //
-//  RPViewController.m
-//  RPSlidingMenuDemo
+//  MainMenuViewController.m
+//  DPHS App
 //
-//  Created by Paul Thorsteinson on 2/24/2014.
-//  Copyright (c) 2014 Robots and Pencils Inc. All rights reserved.
+//  Created by Will Oakley on 10/24/15.
+//  Copyright © 2015 Will Oakley. All rights reserved.
 //
 
-#import "RPViewController.h"
+#import "MainMenuViewController.h"
 
 
-@interface RPViewController ()
+@interface MainMenuViewController ()
+
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
-@implementation RPViewController
+@implementation MainMenuViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
 }
 
-
-#pragma mark - RPSlidingMenuViewController
-
-
 -(NSInteger)numberOfItemsInSlidingMenu{
     return 9;
 }
 
-- (void)customizeCell:(RPSlidingMenuCell *)slidingMenuCell forRow:(NSInteger)row{
-    //Below Created by Will Oakley
-    
+- (void)customizeCell:(RPSlidingMenuCell *)slidingMenuCell forRow:(NSInteger)row{    
     NSArray *titleArray = @[@"",@"Student ID",@"Athletics",@"Campus Info",@"Seminar Info",@"Aeries SIS",@"Naviance",@"Webstore", @"Support"];
     NSArray *subtitleArray = @[@"",
                                @"Access your scannable ID Card!",

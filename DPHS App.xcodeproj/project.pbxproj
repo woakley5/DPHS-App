@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		83153B511BE8229E00934C06 /* ZAActivityBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83153B4E1BE8229E00934C06 /* ZAActivityBar.bundle */; };
 		83153B541BE8231300934C06 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83153B531BE8231300934C06 /* SpriteKit.framework */; };
-		8347151F1CFD018400ABC65B /* RPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF834C18BC541B00A102DA /* RPViewController.m */; };
+		8347151F1CFD018400ABC65B /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DABF834C18BC541B00A102DA /* MainMenuViewController.m */; };
 		834715211CFD018400ABC65B /* NEOClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E4D5D1BDC4895004A2ADA /* NEOClassesTableViewController.m */; };
 		834715231CFD018400ABC65B /* NEOClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E4D6E1BDC659B004A2ADA /* NEOClassViewController.m */; };
 		834715251CFD018400ABC65B /* NEOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83153B4B1BE81E9500934C06 /* NEOLoginViewController.m */; };
@@ -132,7 +132,7 @@
 		83D3298B1BD742930019094C /* CampusCommunicationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampusCommunicationTableViewCell.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/CampusCommunicationTableViewCell.m"; sourceTree = "<absolute>"; };
 		83D3298D1BD7431F0019094C /* CampusCommunicationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CampusCommunicationTableViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/CampusCommunicationTableViewController.h"; sourceTree = "<absolute>"; };
 		83D3298E1BD7431F0019094C /* CampusCommunicationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampusCommunicationTableViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/CampusCommunicationTableViewController.m"; sourceTree = "<absolute>"; };
-		DABF833318BC541B00A102DA /* DPHS App.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "DPHS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABF833318BC541B00A102DA /* DPHS App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DPHS App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABF833618BC541B00A102DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DABF833818BC541B00A102DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DABF833A18BC541B00A102DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -142,8 +142,8 @@
 		DABF834518BC541B00A102DA /* RPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RPAppDelegate.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/RPAppDelegate.h"; sourceTree = "<absolute>"; };
 		DABF834618BC541B00A102DA /* RPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RPAppDelegate.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/RPAppDelegate.m"; sourceTree = "<absolute>"; };
 		DABF834918BC541B00A102DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DABF834B18BC541B00A102DA /* RPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RPViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/RPViewController.h"; sourceTree = "<absolute>"; };
-		DABF834C18BC541B00A102DA /* RPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RPViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/RPViewController.m"; sourceTree = "<absolute>"; };
+		DABF834B18BC541B00A102DA /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/MainMenuViewController.h"; sourceTree = "<absolute>"; };
+		DABF834C18BC541B00A102DA /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/MainMenuViewController.m"; sourceTree = "<absolute>"; };
 		DABF834E18BC541B00A102DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "/Users/WillOakley/Google Drive/Misc/App Development/iOS/DPHSApp/DPHSApp/Images.xcassets"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -379,8 +379,8 @@
 			isa = PBXGroup;
 			children = (
 				DABF834818BC541B00A102DA /* Main.storyboard */,
-				DABF834B18BC541B00A102DA /* RPViewController.h */,
-				DABF834C18BC541B00A102DA /* RPViewController.m */,
+				DABF834B18BC541B00A102DA /* MainMenuViewController.h */,
+				DABF834C18BC541B00A102DA /* MainMenuViewController.m */,
 				832E4D5F1BDC48A8004A2ADA /* NEO Page */,
 				832E4D601BDC48B0004A2ADA /* StudentIDPage */,
 				832E4D621BDC48CD004A2ADA /* Athletics Page */,
@@ -488,7 +488,7 @@
 				8347155A1CFD069C00ABC65B /* RPSlidingMenuCell.m in Sources */,
 				8347155B1CFD069C00ABC65B /* RPSlidingMenuLayout.m in Sources */,
 				8347155C1CFD069C00ABC65B /* RPSlidingMenuViewController.m in Sources */,
-				8347151F1CFD018400ABC65B /* RPViewController.m in Sources */,
+				8347151F1CFD018400ABC65B /* MainMenuViewController.m in Sources */,
 				834715211CFD018400ABC65B /* NEOClassesTableViewController.m in Sources */,
 				834715231CFD018400ABC65B /* NEOClassViewController.m in Sources */,
 				834715251CFD018400ABC65B /* NEOLoginViewController.m in Sources */,

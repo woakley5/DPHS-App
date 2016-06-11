@@ -49,11 +49,21 @@
 
 
 -(void)requestClassIDs{
-    [ZAActivityBar showWithStatus:@"Loading Classes..."];
-    NSURLRequest *classIDRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://dphs.edu20.org/api/get_grades_for_user?api_key=%@&user_id=%@", apiKey, userID]]];
+    @try {
+        [ZAActivityBar showWithStatus:@"Loading Classes..."];
+        NSURLRequest *classIDRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://dphs.edu20.org/api/get_grades_for_user?api_key=%@&user_id=%@", apiKey, userID]]];
+        
+        classIDConnection = [[NSURLConnection alloc] initWithRequest:classIDRequest delegate:self];
+        connectionCounter = 0;
+    }
+    @catch (NSException *exception) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Looks like there was an error connecting to NEO. Please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        [ZAActivityBar dismiss];
+        [self performSegueWithIdentifier:@"neoTableReturnHome" sender:self];
+    }
     
-    classIDConnection = [[NSURLConnection alloc] initWithRequest:classIDRequest delegate:self];
-    connectionCounter = 0;
+   
 }
 
 -(void)requestClassNames{
@@ -80,38 +90,46 @@
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    if(connection == classIDConnection){
-        classDataID = [NSJSONSerialization JSONObjectWithData:NEOAPIData options:NSJSONReadingMutableLeaves error:nil];
-        
-        NSLog(@"Class ID Connection");
-
-        for (int arrayCounter = 0; arrayCounter < [classDataID count]; arrayCounter++) {
+    @try{
+        if(connection == classIDConnection){
             classDataID = [NSJSONSerialization JSONObjectWithData:NEOAPIData options:NSJSONReadingMutableLeaves error:nil];
+        
+            NSLog(@"Class ID Connection");
+
+            for (int arrayCounter = 0; arrayCounter < [classDataID count]; arrayCounter++) {
+                classDataID = [NSJSONSerialization JSONObjectWithData:NEOAPIData options:NSJSONReadingMutableLeaves error:nil];
 
 
-            [classIDArray addObject:[[classDataID objectAtIndex:arrayCounter]objectForKey:@"class_id"]];
-            [classGradesLetterArray addObject:[[[classDataID objectAtIndex:arrayCounter]objectForKey:@"grades"]objectForKey:@"grade"]];
-            [classGradesPercentageArray addObject:[[[classDataID objectAtIndex:arrayCounter]objectForKey:@"grades"]objectForKey:@"percent"]];
-        }
+                [classIDArray addObject:[[classDataID objectAtIndex:arrayCounter]objectForKey:@"class_id"]];
+                [classGradesLetterArray addObject:[[[classDataID objectAtIndex:arrayCounter]objectForKey:@"grades"]objectForKey:@"grade"]];
+                [classGradesPercentageArray addObject:[[[classDataID objectAtIndex:arrayCounter]objectForKey:@"grades"]objectForKey:@"percent"]];
+            }
     
     
-        [self requestClassNames];
-    }
-    if (connection == classNameConnection) {
-        [ZAActivityBar dismiss];
-        classDataName = [NSJSONSerialization JSONObjectWithData:NEOAPIData options:NSJSONReadingMutableLeaves error:nil];
-        
-        NSLog(@"Class Name Connection");
-        
-        [classNamesArray addObject:[[classDataName objectAtIndex:0] objectForKey:@"name"]];
-        if (connectionCounter < [classIDArray count]) {
             [self requestClassNames];
         }
-        else{
-            [self.tableView reloadData];
+        if (connection == classNameConnection) {
+            [ZAActivityBar dismiss];
+            classDataName = [NSJSONSerialization JSONObjectWithData:NEOAPIData options:NSJSONReadingMutableLeaves error:nil];
+        
+            NSLog(@"Class Name Connection");
+        
+            [classNamesArray addObject:[[classDataName objectAtIndex:0] objectForKey:@"name"]];
+            if (connectionCounter < [classIDArray count]) {
+                [self requestClassNames];
+            }
+            else{
+                [self.tableView reloadData];
+            }
         }
+        NSLog(@"%@", classNamesArray);
+        }
+    @catch(NSException *exception) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Looks like there was an error connecting to NEO. Please try again later." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [ZAActivityBar dismiss];
+        [alert show];
+        [self performSegueWithIdentifier:@"neoTableReturnHome" sender:self];
     }
-    NSLog(@"%@", classNamesArray);
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {

@@ -128,7 +128,6 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         if (!error) {
             numberOfCells = [array count];
-            NSLog(@"Successfully retrieved %lu events.", numberOfCells);
             [self.tableView reloadData];
             for (PFObject *object in array) {
                 [objectIDValue addObject:object.objectId];
